@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASKs\\Lesson_2\\Lesson2_Task1main\\Lesson2_Task1_main\\Lesson2_Task1_main.csproj",
+      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_2\\Lesson2_Task1main\\Lesson2_Task1_main\\Lesson2_Task1_main.csproj",
       "projectName": "Lesson2_Task1_main",
-      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASKs\\Lesson_2\\Lesson2_Task1main\\Lesson2_Task1_main\\Lesson2_Task1_main.csproj",
+      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_2\\Lesson2_Task1main\\Lesson2_Task1_main\\Lesson2_Task1_main.csproj",
       "packagesPath": "C:\\Users\\K2by\\.nuget\\packages\\",
-      "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASKs\\Lesson_2\\Lesson2_Task1main\\Lesson2_Task1_main\\obj\\",
+      "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_2\\Lesson2_Task1main\\Lesson2_Task1_main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
