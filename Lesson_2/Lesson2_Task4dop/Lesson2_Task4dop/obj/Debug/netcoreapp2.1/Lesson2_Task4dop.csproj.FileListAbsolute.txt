@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\bin\Debug\netcoreapp2.1\Lesson2_Task4dop.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\bin\Debug\netcoreapp2.1\Lesson2_Task4dop.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\bin\Debug\netcoreapp2.1\Lesson2_Task4dop.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\bin\Debug\netcoreapp2.1\Lesson2_Task4dop.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\bin\Debug\netcoreapp2.1\Lesson2_Task4dop.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\obj\Debug\netcoreapp2.1\Lesson2_Task4dop.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\obj\Debug\netcoreapp2.1\Lesson2_Task4dop.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\obj\Debug\netcoreapp2.1\Lesson2_Task4dop.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\obj\Debug\netcoreapp2.1\Lesson2_Task4dop.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\obj\Debug\netcoreapp2.1\Lesson2_Task4dop.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task4dop\Lesson2_Task4dop\obj\Debug\netcoreapp2.1\Lesson2_Task4dop.csprojAssemblyReference.cache

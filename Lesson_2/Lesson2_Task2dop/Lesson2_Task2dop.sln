@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2_Task2dop", "Lesson2_Task2dop\Lesson2_Task2dop.csproj", "{EF9906F1-ECE2-4D87-9A5D-2C777BB1B1C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF9906F1-ECE2-4D87-9A5D-2C777BB1B1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9906F1-ECE2-4D87-9A5D-2C777BB1B1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9906F1-ECE2-4D87-9A5D-2C777BB1B1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9906F1-ECE2-4D87-9A5D-2C777BB1B1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C805E81-44BA-45EE-924B-0F86BC0D3CFC}
+	EndGlobalSection
+EndGlobal

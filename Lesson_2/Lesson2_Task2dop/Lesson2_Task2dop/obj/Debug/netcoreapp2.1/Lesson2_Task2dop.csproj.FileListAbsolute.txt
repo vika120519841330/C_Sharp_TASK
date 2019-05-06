@@ -1,0 +1,10 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\bin\Debug\netcoreapp2.1\Lesson2_Task2dop.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\bin\Debug\netcoreapp2.1\Lesson2_Task2dop.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\bin\Debug\netcoreapp2.1\Lesson2_Task2dop.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\bin\Debug\netcoreapp2.1\Lesson2_Task2dop.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\bin\Debug\netcoreapp2.1\Lesson2_Task2dop.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\obj\Debug\netcoreapp2.1\Lesson2_Task2dop.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\obj\Debug\netcoreapp2.1\Lesson2_Task2dop.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\obj\Debug\netcoreapp2.1\Lesson2_Task2dop.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\obj\Debug\netcoreapp2.1\Lesson2_Task2dop.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task2dop\Lesson2_Task2dop\obj\Debug\netcoreapp2.1\Lesson2_Task2dop.pdb
