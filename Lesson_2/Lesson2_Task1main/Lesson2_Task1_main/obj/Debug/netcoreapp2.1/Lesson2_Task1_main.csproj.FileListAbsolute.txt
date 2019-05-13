@@ -9,3 +9,14 @@ D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task1main\Lesson2_Tas
 D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.AssemblyInfo.cs
 D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.dll
 D:\Program files\C_Sharp\C_Sharp\HomeWork\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\bin\Debug\netcoreapp2.1\Lesson2_Task1_main.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\bin\Debug\netcoreapp2.1\Lesson2_Task1_main.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\bin\Debug\netcoreapp2.1\Lesson2_Task1_main.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\bin\Debug\netcoreapp2.1\Lesson2_Task1_main.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\bin\Debug\netcoreapp2.1\Lesson2_Task1_main.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_2\Lesson2_Task1main\Lesson2_Task1_main\obj\Debug\netcoreapp2.1\Lesson2_Task1_main.pdb

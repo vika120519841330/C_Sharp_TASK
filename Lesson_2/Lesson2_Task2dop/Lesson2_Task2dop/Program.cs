@@ -12,7 +12,7 @@ namespace Lesson2_Task2dop
             {
                 number = i;
                 Console.WriteLine($"Преобразуемое число: {number}");
-                number = (number & 0xFFFE);//число 0xFFFE в 16-ричной СС соответствует 0000 0000 0000 0001 в двоичной СС
+                number = (number & 0xFFFE);//число 0xFFFE в 16-ричной СС соответствует 1111 1111 1111 1110 в двоичной СС
                 Console.WriteLine($"Число после преобразования: {number}\n");
             }  
         }

@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASKs\\Lesson_2\\Lesson2_Task1dop\\Lesson2_Task1_dop\\Lesson2_Task1_dop.csproj",
+      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_2\\Lesson2_Task1dop\\Lesson2_Task1_dop\\Lesson2_Task1_dop.csproj",
       "projectName": "Lesson2_Task1_dop",
-      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASKs\\Lesson_2\\Lesson2_Task1dop\\Lesson2_Task1_dop\\Lesson2_Task1_dop.csproj",
+      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_2\\Lesson2_Task1dop\\Lesson2_Task1_dop\\Lesson2_Task1_dop.csproj",
       "packagesPath": "C:\\Users\\K2by\\.nuget\\packages\\",
-      "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASKs\\Lesson_2\\Lesson2_Task1dop\\Lesson2_Task1_dop\\obj\\",
+      "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_2\\Lesson2_Task1dop\\Lesson2_Task1_dop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",

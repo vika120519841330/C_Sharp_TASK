@@ -2,6 +2,14 @@
 
 namespace Lesson2_Task1_main
 {
+    class MyException: Exception
+    {
+        public MyException(string str) : base(str) { }
+        public override string ToString()
+        {
+            return Message;
+        }
+    }
     class DifferentiatePayment
     {
         static void Main(string[] args)
@@ -15,14 +23,19 @@ namespace Lesson2_Task1_main
                                            //процентную ставку, разделенную на количество дней в году (365 или 366) и умноженную на число дней
                                            //в платежном периоде (от 28 до 31).)
                 double unpaidMain;//общая сумма неоплаченного основного долга в текущем периоде(уменьшается от месяца к месяцу)
-                byte numDaysInMonth;//кол-во дней в платежном периоде(месяце)
                 double totalSumPaid = 0;//общая сумма всех платежей за год по кредиту
+                byte numDaysInMonth = 1;//кол-во дней в платежном периоде(месяце)
+                byte k = 0;
 
                 Console.WriteLine("Какую сумму кредита Вы хотели бы взять (введите положительное число):");
                 totalCredit = Convert.ToDouble(Console.ReadLine());
+                if (totalCredit <= 0)
+                    throw new MyException("Сумма кредита должна быть больше нуля");
 
                 Console.WriteLine("Под какой размер процентной ставки Вы готовы взять кредит (введите положительное число):");
                 ratePercent = Double.Parse(Console.ReadLine());
+                if ((ratePercent <= 0)||(ratePercent>=100))
+                    throw new MyException("Размер процентной ставки д.б. больше нуля и менее ста");
 
                 sumMainDebtMonth = Math.Round((totalCredit / 12), 2, MidpointRounding.AwayFromZero);
 
@@ -33,102 +46,67 @@ namespace Lesson2_Task1_main
                     {
                         case 1:
                             numDaysInMonth = 31;
-                            unpaidMain = totalCredit;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\tв т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 0;
                             break;
                         case 2:
                             numDaysInMonth = 28;
-                            unpaidMain = totalCredit - sumMainDebtMonth;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\tв т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 1;
                             break;
                         case 3:
                             numDaysInMonth = 31;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 2;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\tв т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 2;
                             break;
                         case 4:
                             numDaysInMonth = 30;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 3;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\tв т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 3;
                             break;
                         case 5:
                             numDaysInMonth = 31;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 4;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\tв т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 4;
                             break;
                         case 6:
                             numDaysInMonth = 30;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 5;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\tв т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 5;
                             break;
                         case 7:
                             numDaysInMonth = 30;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 6;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\t в т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 6;
                             break;
                         case 8:
                             numDaysInMonth = 31;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 7;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\t в т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 7;
                             break;
                         case 9:
                             numDaysInMonth = 30;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 8;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\t в т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 8;
                             break;
                         case 10:
                             numDaysInMonth = 31;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 9;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\t в т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 9;
                             break;
                         case 11:
                             numDaysInMonth = 30;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 10;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\t в т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 10;
                             break;
                         case 12:
                             numDaysInMonth = 31;
-                            unpaidMain = totalCredit - sumMainDebtMonth * 11;
-                            sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
-                            Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\t в т.ч.: основной долг: {sumMainDebtMonth}\t проценты: {sumPercentDebtMonth}");
-                            totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
+                            k = 11;
                             break;
                     }
+                    unpaidMain = totalCredit - sumMainDebtMonth * k;
 
+                    sumPercentDebtMonth = Math.Round((unpaidMain * ratePercent / 100 / 365 * numDaysInMonth), 2, MidpointRounding.AwayFromZero);
+                    Console.WriteLine($"Месяц {i}: {(sumMainDebtMonth + sumPercentDebtMonth)}\tв т.ч.: основной долг:{sumMainDebtMonth}\tпроценты:{sumPercentDebtMonth}");
+
+                    totalSumPaid = totalSumPaid + (sumMainDebtMonth + sumPercentDebtMonth);
                 }
-                Console.WriteLine();
-                Console.WriteLine($"Общая сумма всех платежей за год по кредиту составит: {totalSumPaid}");
+                Console.WriteLine($"\nОбщая сумма всех платежей за год по кредиту составит: {totalSumPaid}");
             }
-            catch (FormatException)
+            catch (MyException exc)
             {
-                Console.WriteLine("Недопустимый формат ввода, попробуйте еще раз!");
+                Console.WriteLine(exc);
             }
-            catch (OverflowException)
-            {
-                Console.WriteLine("Вы ввели недопустимое значение, попробуйте еще раз!");
-            }
+
         }
     }
 }
