@@ -1,0 +1,10 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\bin\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\bin\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\bin\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\bin\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\bin\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\obj\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\obj\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\obj\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\obj\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_3\Lesson_3_Task_Main\obj\Debug\netcoreapp2.1\Lesson_3_Home_Task_Main_2.pdb
