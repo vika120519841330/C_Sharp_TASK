@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_3\\Lesson_3_Home_Task_Main_3\\Lesson_3_Home_Task_Main_3.csproj": {}
+  },
+  "projects": {
+    "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_3\\Lesson_3_Home_Task_Main_3\\Lesson_3_Home_Task_Main_3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_3\\Lesson_3_Home_Task_Main_3\\Lesson_3_Home_Task_Main_3.csproj",
+        "projectName": "Lesson_3_Home_Task_Main_3",
+        "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_3\\Lesson_3_Home_Task_Main_3\\Lesson_3_Home_Task_Main_3.csproj",
+        "packagesPath": "C:\\Users\\K2by\\.nuget\\packages\\",
+        "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_3\\Lesson_3_Home_Task_Main_3\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\K2by\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
