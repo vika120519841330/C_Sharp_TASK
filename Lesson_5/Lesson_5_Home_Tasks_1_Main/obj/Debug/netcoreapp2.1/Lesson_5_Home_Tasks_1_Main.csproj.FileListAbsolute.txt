@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\bin\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\bin\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\bin\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\bin\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\bin\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\obj\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\obj\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\obj\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\obj\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\obj\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_5\Lesson_5_Home_Tasks_1_Main\obj\Debug\netcoreapp2.1\Lesson_5_Home_Tasks_1_Main.pdb
