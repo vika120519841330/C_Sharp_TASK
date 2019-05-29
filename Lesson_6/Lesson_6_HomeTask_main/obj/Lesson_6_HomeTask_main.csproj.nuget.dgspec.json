@@ -14,7 +14,7 @@
         "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\Lesson_6\\Lesson_6_HomeTask_main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
