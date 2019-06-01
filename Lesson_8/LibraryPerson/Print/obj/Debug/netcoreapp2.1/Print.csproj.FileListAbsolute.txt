@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\bin\Debug\netcoreapp2.1\Print.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\bin\Debug\netcoreapp2.1\Print.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\bin\Debug\netcoreapp2.1\Print.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\bin\Debug\netcoreapp2.1\Print.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\bin\Debug\netcoreapp2.1\Print.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\obj\Debug\netcoreapp2.1\Print.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\obj\Debug\netcoreapp2.1\Print.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\obj\Debug\netcoreapp2.1\Print.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\obj\Debug\netcoreapp2.1\Print.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\obj\Debug\netcoreapp2.1\Print.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_8\LibraryPerson\Print\obj\Debug\netcoreapp2.1\Print.pdb
