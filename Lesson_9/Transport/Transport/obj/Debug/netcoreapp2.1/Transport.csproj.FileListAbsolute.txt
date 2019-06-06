@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\bin\Debug\netcoreapp2.1\Transport.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\bin\Debug\netcoreapp2.1\Transport.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\bin\Debug\netcoreapp2.1\Transport.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\bin\Debug\netcoreapp2.1\Transport.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\bin\Debug\netcoreapp2.1\Transport.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\obj\Debug\netcoreapp2.1\Transport.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\obj\Debug\netcoreapp2.1\Transport.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\obj\Debug\netcoreapp2.1\Transport.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\obj\Debug\netcoreapp2.1\Transport.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\obj\Debug\netcoreapp2.1\Transport.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_9\Transport\Transport\obj\Debug\netcoreapp2.1\Transport.pdb

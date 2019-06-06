@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\LibraryNew.deps.json
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\LibraryNew.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\LibraryNew.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\LibraryNew.dll
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp2.1\LibraryNew.pdb
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\LibraryNew.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\LibraryNew.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\LibraryNew.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\LibraryNew.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\LibraryNew.dll
+D:\Program files\C_Sharp\C_Sharp\Lessons\Lesson_10\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp2.1\LibraryNew.pdb
