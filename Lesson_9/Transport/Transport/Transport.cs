@@ -14,9 +14,9 @@ namespace Transport
     {
         static void Main(string[] args)
         {
-            /*Console.WriteLine("Демонстрация применения класса Car:\n");
+            Console.WriteLine("Демонстрация применения класса Car:");
             Car car1 = new Car();
-            car1.ShowInfoClass();
+            car1.ShowInfoClass(car1);
             // разгон
             car1.MovingForceUPDown(100);
             car1.MovingForceUPDown(350);
@@ -25,43 +25,47 @@ namespace Transport
             //остановка
             car1.MovingForceUPDown(0);
 
-            Console.WriteLine("\n\nДемонстрация применения класса Yacht:\n");
+            Console.WriteLine("\n\nДемонстрация применения класса Yacht:");
             Yacht yacht1 = new Yacht();
-            yacht1.ShowInfoClass();
+            yacht1.ShowInfoClass(yacht1);
             // разгон
-            yacht1.MovingForceUPDown(20);
+            yacht1.MovingForceUPDown(10);
             yacht1.MovingForceUPDown(30);
             // замедление
-            yacht1.MovingForceUPDown(10);
+            yacht1.MovingForceUPDown(20);
             //остановка
             yacht1.MovingForceUPDown(0);
 
-            Console.WriteLine("\n\nДемонстрация применения класса Bicycle:\n");
+            Console.WriteLine("\n\nДемонстрация применения класса Bicycle:");
             Bicycle bicycle1 = new Bicycle();
-            bicycle1.ShowInfoClass();
+            bicycle1.ShowInfoClass(bicycle1);
             // разгон
             bicycle1.MovingForceUPDown(30);
             bicycle1.MovingForceUPDown(40);
             // замедление
             bicycle1.MovingForceUPDown(20);
             //остановка
-            bicycle1.MovingForceUPDown(0);*/
+            bicycle1.MovingForceUPDown(0);
 
-            Console.WriteLine("\nДемонстрация применения класса Aircraft:\n");
+            Console.WriteLine("\nДемонстрация применения класса Aircraft:");
             Aircraft aircraft1 = new Aircraft();
-            aircraft1.ShowInfoClass();
+            aircraft1.ShowInfoClass(aircraft1);
             // разгон и набор высоты
             aircraft1.AccelerationBraking(300, 2);
-            aircraft1.AccelerationBraking(500, 5);
-            aircraft1.AccelerationBraking(600, 7);
+            aircraft1.AccelerationBraking(400, 5);
+            aircraft1.AccelerationBraking(500, 7);
             // разгон без набора высоты
-            aircraft1.AccelerationBraking(700, 7);
+            aircraft1.AccelerationBraking(600, 7);
             //снижение высоты без изменения скорости
-            aircraft1.AccelerationBraking(700, 6);
+            aircraft1.AccelerationBraking(600, 6);
             //набор скорости без изменения высоты
-            aircraft1.AccelerationBraking(800, 6);
+            aircraft1.AccelerationBraking(700, 6);
+            //набор скорости и высоты выше максимально допустимых значений
+            aircraft1.AccelerationBraking(900, 11);
+            //сброс скорости и высоты ниже минимально допустимых значений
+            aircraft1.AccelerationBraking(100, 1);
             // приземление
-            //aircraft1.AccelerationBraking(0, 0);
+            aircraft1.AccelerationBraking(0, 0); 
         }
     }
 
@@ -69,10 +73,10 @@ namespace Transport
     {
         public Transport()
         {
-            this.CurrentSpeed = 0;
+            this.CurrentSpeed = 0; // у всех (производных и базового) классов начальное значение текущей скорости нулевое
         }
 
-        // Среда перемещения
+        // Вид транспорта относительно среды перемещения
         public string EnvironmentOfMoving { get; set; }
 
         // Максимальная скорость перемещения
@@ -84,35 +88,41 @@ namespace Transport
         // Текущая скорость перемещения
         public int CurrentSpeed { get; set; }
 
-        // Необходимая скорость перемещения
+        // Необходимая (заданная) скорость перемещения
         public virtual int NeedSpeed { get; set; }
 
         // Шаг изменения скорости ТС при увеличении/снижении воздействия на движущую систему ТС
         public int Step { get; set; }
 
-        // Способ усиления воздействия на движущую силу конкретного ТС
+        // Способ усиления воздействия на движущую силу конкретного ТС - подлежит переопределению во всех производных классах
         public virtual void ForceUp()
         {
             Console.WriteLine("Усиливать воздействие на движущую силу ТС до тех пор, пока текущая скорость не станет равной заданной");
         }
 
-        // Способ усиления воздействия на движущую силу конкретного ТС
+        // Способ снижения воздействия на движущую силу конкретного ТС - подлежит переопределению во всех производных классах
         public virtual void ForceDown()
         {
             Console.WriteLine("Снижать воздействие на движущую силу ТС до тех пор, пока текущая скорость не станет равной заданной");
         }
 
-        // Способ воздействия на движущую силу конкретного ТС для его остановки
+        // Способ воздействия на движущую силу конкретного ТС для его остановки - подлежит переопределению во всех производных классах
         public virtual void ForceStop()
         {
-            Console.WriteLine("Снижать воздействие на движущую силу до полной остановки ТС");
+            Console.WriteLine("Прекратить воздействие на движущую силу ТС до полной его остановки");
         }
 
-        // Метод, отражающий способ воздействия на движущую силу ТС для набора скорости
+        // Метод, для набора скорости ТС
         public void MoveUp(int s)
         {
             NeedSpeed = s;
-            Console.WriteLine($"Разогнать ТС до скорости {this.NeedSpeed}\0{this.UnitOfSpeed}:");
+            Console.WriteLine($"\nРазогнать ТС до скорости {this.NeedSpeed}\0{this.UnitOfSpeed}:");
+            if (NeedSpeed > MaxSpeed)
+            {
+                Console.WriteLine("Движение со скоростью выше предельно допустимой может привести к поломке транспортного средства" +
+                  "\0и созданию аварийной ситуации!! Увеличить скорость до максимально допустимой!!");
+                NeedSpeed = MaxSpeed;
+            }
             do
             {
                 this.ForceUp();
@@ -123,11 +133,11 @@ namespace Transport
             Console.WriteLine($"Разгон ТС до скорости {this.NeedSpeed}\0{this.UnitOfSpeed} завершен!");
         }
 
-        // Метод, отражающий способ воздействия на движущую силу ТС для сброса скорости
+        //  Метод для сброса скорости ТС
         public void MoveDown(int s)
         {
             NeedSpeed = s;
-            Console.WriteLine($"Замедлить ТС до скорости {this.NeedSpeed}\0{this.UnitOfSpeed}:");
+            Console.WriteLine($"\nЗамедлить ТС до скорости {this.NeedSpeed}\0{this.UnitOfSpeed}:");
             do
             {
                 this.ForceDown();
@@ -138,60 +148,48 @@ namespace Transport
             Console.WriteLine($"Снижение скорости ТС до уровня {this.NeedSpeed}\0{this.UnitOfSpeed} завершено!");
         }
 
-        // Метод, отражающий способ воздействия на движущую силу ТС для остановки ТС
+        // Метод для остановки ТС
         public void MoveStop()
         {
             NeedSpeed = 0;
-            Console.WriteLine($"Выполнить полную остановку ТС:");
+            Console.WriteLine($"\nВыполнить полную остановку ТС:");
             do
             {
                 this.ForceStop();
                 CurrentSpeed = CurrentSpeed - Step;
                 Console.WriteLine($"Текущая скорость ТС {this.CurrentSpeed}\0{this.UnitOfSpeed}");
             }
-            while (CurrentSpeed != NeedSpeed);
+            while ((CurrentSpeed != NeedSpeed) || (CurrentSpeed < NeedSpeed));
             Console.WriteLine($"Выполнена полная остановка ТС!");
         }
 
-        // Метод для изменения (набора/снижения) текущей скорости   - в качестве аргумента передается желаемая скорость перемещения
+        // Метод для изменения (набора/снижения) текущей скорости ТС - в качестве аргумента передается желаемая скорость перемещения
         public void MovingForceUPDown(int s)
         {
             NeedSpeed = s;
-            Console.WriteLine($"Требуемая скорость ТС: {this.NeedSpeed}\0{this.UnitOfSpeed}");
+            Console.WriteLine($"Текущая скорость ТС: {this.CurrentSpeed}\0{this.UnitOfSpeed}");
             if (CurrentSpeed < NeedSpeed)
-            {
-                if (NeedSpeed <= MaxSpeed)
-                {
-                    Console.WriteLine("Набор скорости!");
-                    this.MoveUp(s);
-                }
-                else
-                {
-                    Console.WriteLine("Движение со скоростью выше предельно допустимой может привести к поломке транспортного средства" +
-                    "\0и созданию аварийной ситуации!! Увеличить скорость до максимально допустимой!!");
-                    NeedSpeed = MaxSpeed;
-                    this.MoveUp(NeedSpeed);
-                }
-            }
+                this.MoveUp(NeedSpeed);
+
             else if (NeedSpeed == 0)
             {
-                Console.WriteLine("Остановить транспортное средство!");
                 this.MoveStop();
             }
-            else if (CurrentSpeed > NeedSpeed)
+            else if(CurrentSpeed > NeedSpeed)
             {
-                Console.WriteLine("Снижение скорости!");
-                this.MoveDown(s);
+                this.MoveDown(NeedSpeed);
             }
         }
 
         // Метод для отображения сведений о тестируемом классе
-        public virtual void ShowInfoClass()
+        public virtual void ShowInfoClass(Transport tr)
         {
-            Console.WriteLine($"\nВид транспорта:\0{this.EnvironmentOfMoving}" +
+            Type t = tr.GetType();
+            Console.WriteLine($"\nКласс:\0{t.Name}" +
+                $"\nВид транспорта:\0{this.EnvironmentOfMoving}" +
                 $"\nМаксимально допустимая скорость перемещения:\0{this.MaxSpeed}\0{this.UnitOfSpeed}\n");
             Console.WriteLine();
-        }     
+        }
     }
 
     class Yacht : Transport
@@ -213,25 +211,25 @@ namespace Transport
         }
         public override void ForceStop()
         {
-            Console.WriteLine("Бросить якорь!");
+            Console.WriteLine("Свернуть паруса и бросить якорь!");
         }
     }
 
     class Car : Transport
     {
-        public Car () : base ()
+        public Car() : base()
         {
             EnvironmentOfMoving = "Наземный транспорт";
             MaxSpeed = 250;
             UnitOfSpeed = "миль в час";
             Step = 50;
         }
-            
+
         public override void ForceUp()
         {
             Console.WriteLine("Надавить на педаль газа!");
         }
-        
+
         public override void ForceDown()
         {
             Console.WriteLine("Отпустить педаль газа! При необходимости притормаживать!");
@@ -240,6 +238,29 @@ namespace Transport
         public override void ForceStop()
         {
             Console.WriteLine("Надавить на педаль тормоза!");
+        }
+    }
+
+    class Bicycle : Transport
+    {
+        public Bicycle() : base()
+        {
+            EnvironmentOfMoving = "Наземный транспорт";
+            MaxSpeed = 50;
+            UnitOfSpeed = "км/час";
+            Step = 10;
+        }
+        public override void ForceUp()
+        {
+            Console.WriteLine("Быстрее крутить педали");
+        }
+        public override void ForceDown()
+        {
+            Console.WriteLine("Прекратить крутить педали либо крутить их медленнее. При необходимости притормаживать.");
+        }
+        public override void ForceStop()
+        {
+            Console.WriteLine("Прекратить крутить педали и нажать на тормоз!");
         }
     }
 
@@ -255,19 +276,21 @@ namespace Transport
             MaxSpeed = 800;
             MinSpeed = 200;
             Step = 100;
-            MaxHeight = 10; 
-            MinHeight = 1; 
+            MaxHeight = 10;
+            MinHeight = 2;
             UnitOfSpeed = "км/час";
             UnitOfHeight = "км.";
             CurrentHeight = 0;
         }
-        public override void ShowInfoClass()
+        public void ShowInfoClass(Aircraft air)
         {
-            Console.WriteLine($"\nВид транспорта:\0{this.EnvironmentOfMoving}" +
-                $"\nМинимально допустимая скорость полета:\0{this.MinSpeed}\0{this.UnitOfSpeed}" + 
-                $"\nМаксимально допустимая скорость полета:\0{this.MaxSpeed}\0{this.UnitOfSpeed}" +
-                $"\nМинимально допустимая высота полета:\0{this.MinHeight}\0{this.UnitOfHeight}" +
-                $"\nМаксимально допустимая высота полета:\0{this.MaxHeight}\0{this.UnitOfHeight}\n\n");
+            Type t = air.GetType();
+            Console.WriteLine($"\nКласс:\0{t.Name}" +
+                $"\nВид транспорта:\0{this.EnvironmentOfMoving}" +
+                $"\nМинимально допустимая безопасная скорость полета:\0{this.MinSpeed}\0{this.UnitOfSpeed}" +
+                $"\nМаксимально допустимая безопасная скорость полета:\0{this.MaxSpeed}\0{this.UnitOfSpeed}" +
+                $"\nМинимально допустимая безопасная высота полета:\0{this.MinHeight}\0{this.UnitOfHeight}" +
+                $"\nМаксимально допустимая безопасная высота полета:\0{this.MaxHeight}\0{this.UnitOfHeight}");
         }
 
         private int needSpeed;
@@ -283,26 +306,35 @@ namespace Transport
                     needSpeed = value;
                 else if (value > MaxSpeed)
                 {
-                    Console.WriteLine($"Требуемая скорость полета должна находиться в диапазоне минимально ({MinSpeed}\0{UnitOfSpeed})" +
+                    Console.WriteLine($"\nТребуемая скорость полета должна находиться в диапазоне минимально ({MinSpeed}\0{UnitOfSpeed})" +
                         $" и максимально ({MaxSpeed}\0{UnitOfSpeed}) допустимого значения скорости полета!!");
+                    Console.WriteLine($"Установить скорость полета равной максимально допустимому значению!");
                     needSpeed = MaxSpeed;
                 }
-                else if ((value < MinSpeed)&&(value > 0))
+                else if ((value < MinSpeed) && (value > 0))
                 {
-                    Console.WriteLine("Самолету недостаточно мощности! Скорость ниже минимально допустимой!" +
-                        " Подтвердите, что идем на посадку: нажмите << + >>для продолжения!");
+                    Console.WriteLine("\nСамолету бужет недостаточно мощности! Скорость станет ниже минимально допустимой!" +
+                        " Подтвердите снижение скорости полета: нажмите << + >> для продолжения!");
                     string temp = Console.ReadLine();
                     if (temp == "+")
                         needSpeed = value;
-                    else needSpeed = MinSpeed;
+                    else
+                    {
+                        Console.WriteLine($"Установить скорость полета равной минимально допустимому значению: ({MinSpeed}\0{UnitOfSpeed})!");
+                        needSpeed = MinSpeed;
+                    }
                 }
                 else if (value == 0)
                 {
-                    Console.WriteLine("Подтвердите, что идем на посадку: нажмите << + >> для продолжения!");
+                    Console.WriteLine("\nПодтвердите, что необходимо выключить двигатели: нажмите << + >> для продолжения!");
                     string temp = Console.ReadLine();
                     if (temp == "+")
                         needSpeed = value;
-                    else needSpeed = MinSpeed;
+                    else
+                    {
+                        Console.WriteLine($"Установить скорость полета равной минимально допустимому значению: ({MinSpeed}\0{UnitOfSpeed})!");
+                        needSpeed = MinSpeed;
+                    }
                 }
             }
         }
@@ -324,49 +356,58 @@ namespace Transport
                     needHeight = value;
                 else if (value > MaxHeight)
                 {
-                    Console.WriteLine($"Требуемая высота полета должна находиться в диапазоне минимально ({MinHeight}\0{UnitOfHeight})" +
+                    Console.WriteLine($"\nТребуемая высота полета должна находиться в диапазоне минимально ({MinHeight}\0{UnitOfHeight})" +
                         $" и максимально ({MaxHeight}\0{UnitOfHeight}) допустимого значения высоты полета!!");
+                    Console.WriteLine($"Установить высоту полета равной максимально допустимому значению!");
                     needHeight = MaxHeight;
                 }
-                else if ((value < MinHeight)&&((value > 0)))
+                else if ((value < MinHeight) && ((value > 0)))
                 {
-                    Console.WriteLine("Самолет теряет минимально допустимую высоту полета! " +
-                        "Подтвердите, что идем на посадку: нажмите << + >> для продолжения");
+                    Console.WriteLine("\nСамолет потеряет минимально допустимую высоту полета! " +
+                        "Подтвердите, снижение: нажмите << + >> для продолжения");
                     string temp = Console.ReadLine();
                     if (temp == "+")
                         needHeight = value;
-                    else needHeight = MinHeight;
+                    else
+                    {
+                        Console.WriteLine($"Установить высоту полета равной минимально допустимому значению: ({MinHeight}\0{UnitOfHeight})!");
+                        needHeight = MinHeight;
+                    }
                 }
                 else if (value == 0)
                 {
-                    Console.WriteLine("Подтвердите, что идем на посадку: нажмите << + >> для продолжения!");
+                    Console.WriteLine("\nПодтвердите, что идем на посадку: нажмите << + >> для продолжения!");
                     string temp = Console.ReadLine();
                     if (temp == "+")
                         needHeight = value;
-                    else needHeight = MinHeight;
+                    else
+                    {
+                        Console.WriteLine($"Установить высоту полета равной минимально допустимому значению: ({MinHeight}\0{UnitOfHeight})!");
+                        needHeight = MinHeight;
+                    }
                 }
             }
         }
         public override void ForceUp()
         {
-            Console.WriteLine("Отвести рычаг управления двигателем от себя!");
+            Console.WriteLine("Отвести рычаг управления двигателем от себя! Увеличить подачу топлива для ускорения двигателей!");
         }
 
         public override void ForceDown()
         {
-            Console.WriteLine("Потянуть рычаг управления двигателем на себя!");
+            Console.WriteLine("Потянуть рычаг управления двигателем на себя! Сократить подачу топлива для замедления двигателей");
         }
 
         public override void ForceStop()
         {
-            Console.WriteLine("Перевести рычаг управления двигателем в нейтральное положение! Надавить на педаль тормоза!");
+            Console.WriteLine("Перевести рычаг управления двигателем в нейтральное положение! Выключить подачу топлива и двигатели! Надавить на педаль тормоза!");
         }
 
         // Набор высоты
         public void HeightUp(int h)
         {
             this.NeedHeight = h;
-            while ((this.CurrentHeight != this.NeedHeight)&& (this.CurrentHeight < this.MaxHeight))
+            while ((this.CurrentHeight != this.NeedHeight) && (this.CurrentHeight < this.MaxHeight))
             {
                 Console.WriteLine("Потянуть штурвал на себя!");
                 this.CurrentHeight = this.CurrentHeight + 1;
@@ -378,7 +419,7 @@ namespace Transport
         public void HeightDown(int h)
         {
             this.NeedHeight = h;
-            while ((this.CurrentHeight != this.NeedHeight)&&(this.CurrentHeight >= 0))
+            while ((this.CurrentHeight != this.NeedHeight) && (this.CurrentHeight >= 0))
             {
                 Console.WriteLine("Оттолкнуть штурвал от себя!");
                 this.CurrentHeight = this.CurrentHeight - 1;
@@ -389,71 +430,50 @@ namespace Transport
         // Разгон, взлет, набор высоты, снижение, приземление - в качестве аргумента принимает заданную высоту и скорость полета
         public void AccelerationBraking(int s, int h)
         {
-            this.NeedHeight = h;
+            Console.WriteLine($"\nТребуемая скорость самолета: {s}\0{this.UnitOfSpeed}," +
+                $"\0требуемая высота полета самолета: {h}\0{this.UnitOfHeight}");
+            Console.WriteLine($"\nТекущая скорость самолета: {this.CurrentSpeed}\0{this.UnitOfSpeed}," +
+                $"\0текущая высота полета самолета: {this.CurrentHeight}\0{this.UnitOfHeight}");
+            // На первом этапе изменим скорость полета
             this.NeedSpeed = s;
-            
-            Console.WriteLine($"Требуемая скорость самолета: {this.NeedSpeed}\0{this.UnitOfSpeed}");
             if (CurrentSpeed < NeedSpeed)
             {
-                Console.WriteLine("Набор скорости!");
-                this.MoveUp(s);
+                Console.WriteLine("\nНабор скорости!");
+                this.MoveUp(this.NeedSpeed);
             }
             else if (CurrentSpeed > NeedSpeed)
             {
-                Console.WriteLine("Сброс скорости!");
-                this.MoveDown(s);
+                Console.WriteLine("\nСброс скорости!");
+                this.MoveDown(this.NeedSpeed);
             }
             else if (CurrentSpeed == NeedSpeed)
-                Console.WriteLine("Самолет уже достиг требуемой скорости!");
-            if (NeedSpeed == 0)
+                Console.WriteLine("\nСамолет уже достиг требуемой скорости!\n");
+            else if (NeedSpeed == 0)
             {
-                Console.WriteLine("Идем на посадку!");
-                this.HeightDown(0);
+                Console.WriteLine("\nВыключить двигатели!");
                 this.MoveStop();
             }
-
-            Console.WriteLine($"Требуемая высота полета самолета: {this.NeedHeight}\0{this.UnitOfHeight}");
+             
+            // На втором этапе изменим высоту полета
+            this.NeedHeight = h;
             if (CurrentHeight < NeedHeight)
             {
-                Console.WriteLine("Набор высоты!");
-                this.HeightUp(h);
+                Console.WriteLine("\nНабор высоты!\n");
+                this.HeightUp(this.NeedHeight);
             }
             else if (CurrentHeight > NeedHeight)
             {
-                Console.WriteLine("Сброс высоты!");
-                this.HeightDown(h);
+                Console.WriteLine("\nСброс высоты!");
+                this.HeightDown(this.NeedHeight);
             }
             else if (CurrentHeight == NeedHeight)
-                Console.WriteLine("Самолет уже достиг требуемой высоты!");
-            if (NeedHeight == 0)
+                Console.WriteLine("\nСамолет уже достиг требуемой высоты!\n");
+            else if (NeedHeight == 0)
             {
-                Console.WriteLine("Идем на посадку!");
-                Console.WriteLine("Самолет должен полностью приземлиться шасси на землю для выполнения полной остановки ТС!!");
-                this.HeightDown(0);
+                Console.WriteLine("\nСамолет идет на посадку!");
+                this.HeightDown(this.NeedHeight);
             }
-        }
-    }
-
-    class Bicycle : Transport
-    {
-        public Bicycle() : base()
-        {
-            EnvironmentOfMoving = "Наземный транспорт";
-            MaxSpeed = 50;
-            UnitOfSpeed = "км/час";
-            Step = 10;
-        }
-        public override void ForceUp()
-        {
-            Console.WriteLine("Быстрее крутить педали");
-        }
-        public override void ForceDown()
-        {
-            Console.WriteLine("Медленнее либо совсем прекратить крутить педали");
-        }
-        public override void ForceStop()
-        {
-            Console.WriteLine("Прекратить крутить педали и нажать на тормоз!");
         }
     }
 }
+
