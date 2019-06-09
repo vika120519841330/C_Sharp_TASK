@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\bin\Debug\netcoreapp2.1\UserStack.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\bin\Debug\netcoreapp2.1\UserStack.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\bin\Debug\netcoreapp2.1\UserStack.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\bin\Debug\netcoreapp2.1\UserStack.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\bin\Debug\netcoreapp2.1\UserStack.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\obj\Debug\netcoreapp2.1\UserStack.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\obj\Debug\netcoreapp2.1\UserStack.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\obj\Debug\netcoreapp2.1\UserStack.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\obj\Debug\netcoreapp2.1\UserStack.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\obj\Debug\netcoreapp2.1\UserStack.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\ConsoleApp3\obj\Debug\netcoreapp2.1\UserStack.pdb

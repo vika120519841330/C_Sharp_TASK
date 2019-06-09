@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\bin\Debug\netcoreapp2.1\FillUpCar.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\bin\Debug\netcoreapp2.1\FillUpCar.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\bin\Debug\netcoreapp2.1\FillUpCar.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\bin\Debug\netcoreapp2.1\FillUpCar.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\bin\Debug\netcoreapp2.1\FillUpCar.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\obj\Debug\netcoreapp2.1\FillUpCar.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\obj\Debug\netcoreapp2.1\FillUpCar.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\obj\Debug\netcoreapp2.1\FillUpCar.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\obj\Debug\netcoreapp2.1\FillUpCar.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\obj\Debug\netcoreapp2.1\FillUpCar.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_10\ConsoleApp1\FillUpCar\obj\Debug\netcoreapp2.1\FillUpCar.pdb
