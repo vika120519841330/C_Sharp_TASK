@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerProgram", "PlayerProgram\PlayerProgram.csproj", "{343AEC2B-58ED-4130-996F-623A7ECF3CC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerProgram_v2", "PlayerProgram\PlayerProgram_v2.csproj", "{343AEC2B-58ED-4130-996F-623A7ECF3CC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oldVariant", "oldVariant\oldVariant.csproj", "{3C3C9436-F4BA-4D4A-B6DF-5E638B56E86E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerProgram_v1", "oldVariant\PlayerProgram_v1.csproj", "{3C3C9436-F4BA-4D4A-B6DF-5E638B56E86E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerProgram_v3", "PlayerProgram_v3\PlayerProgram_v3.csproj", "{B46EE9DB-1ED4-4B56-8F23-B8712EA71BD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3C3C9436-F4BA-4D4A-B6DF-5E638B56E86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C3C9436-F4BA-4D4A-B6DF-5E638B56E86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C3C9436-F4BA-4D4A-B6DF-5E638B56E86E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46EE9DB-1ED4-4B56-8F23-B8712EA71BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46EE9DB-1ED4-4B56-8F23-B8712EA71BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46EE9DB-1ED4-4B56-8F23-B8712EA71BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46EE9DB-1ED4-4B56-8F23-B8712EA71BD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

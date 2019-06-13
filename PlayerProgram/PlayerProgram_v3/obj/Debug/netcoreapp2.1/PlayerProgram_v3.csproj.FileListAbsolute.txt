@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\bin\Debug\netcoreapp2.1\PlayerProgram_v3.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\bin\Debug\netcoreapp2.1\PlayerProgram_v3.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\bin\Debug\netcoreapp2.1\PlayerProgram_v3.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\bin\Debug\netcoreapp2.1\PlayerProgram_v3.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\bin\Debug\netcoreapp2.1\PlayerProgram_v3.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\obj\Debug\netcoreapp2.1\PlayerProgram_v3.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\obj\Debug\netcoreapp2.1\PlayerProgram_v3.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\obj\Debug\netcoreapp2.1\PlayerProgram_v3.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\obj\Debug\netcoreapp2.1\PlayerProgram_v3.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\obj\Debug\netcoreapp2.1\PlayerProgram_v3.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\PlayerProgram\PlayerProgram_v3\obj\Debug\netcoreapp2.1\PlayerProgram_v3.pdb

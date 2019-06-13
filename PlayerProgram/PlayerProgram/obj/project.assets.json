@@ -695,9 +695,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram\\PlayerProgram.csproj",
-      "projectName": "PlayerProgram",
-      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram\\PlayerProgram.csproj",
+      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram\\PlayerProgram_v2.csproj",
+      "projectName": "PlayerProgram_v2",
+      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram\\PlayerProgram_v2.csproj",
       "packagesPath": "C:\\Users\\K2by\\.nuget\\packages\\",
       "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram\\obj\\",
       "projectStyle": "PackageReference",

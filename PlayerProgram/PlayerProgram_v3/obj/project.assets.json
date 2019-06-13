@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\oldVariant\\PlayerProgram_v1.csproj",
-      "projectName": "PlayerProgram_v1",
-      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\oldVariant\\PlayerProgram_v1.csproj",
+      "projectUniqueName": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram_v3\\PlayerProgram_v3.csproj",
+      "projectName": "PlayerProgram_v3",
+      "projectPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram_v3\\PlayerProgram_v3.csproj",
       "packagesPath": "C:\\Users\\K2by\\.nuget\\packages\\",
-      "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\oldVariant\\obj\\",
+      "outputPath": "D:\\Program files\\C_Sharp\\C_Sharp\\HomeWork\\TASKs_main\\C_Sharp_TASK\\PlayerProgram\\PlayerProgram_v3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
