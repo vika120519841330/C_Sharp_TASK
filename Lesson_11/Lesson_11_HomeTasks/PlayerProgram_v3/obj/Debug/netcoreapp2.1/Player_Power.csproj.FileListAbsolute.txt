@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\bin\Debug\netcoreapp2.1\Player_Power.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\bin\Debug\netcoreapp2.1\Player_Power.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\bin\Debug\netcoreapp2.1\Player_Power.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\bin\Debug\netcoreapp2.1\Player_Power.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\bin\Debug\netcoreapp2.1\Player_Power.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\obj\Debug\netcoreapp2.1\Player_Power.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\obj\Debug\netcoreapp2.1\Player_Power.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\obj\Debug\netcoreapp2.1\Player_Power.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\obj\Debug\netcoreapp2.1\Player_Power.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\obj\Debug\netcoreapp2.1\Player_Power.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_11\Lesson_11_HomeTasks\PlayerProgram_v3\obj\Debug\netcoreapp2.1\Player_Power.pdb

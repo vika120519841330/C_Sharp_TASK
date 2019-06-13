@@ -21,7 +21,7 @@ namespace Pupil
             ClassRoom classA = new ClassRoom(pupul1, pupul2, pupul3);
             classA.AddPupilInClass(pupul4);
 
-            classA.ShowInfo(classA);
+            classA.ShowInfo();
         }
     }
     class ClassRoom
@@ -47,12 +47,12 @@ namespace Pupil
             this.PupilList.Add(p);
         }
 
-        public void ShowInfo(ClassRoom cl)
+        public void ShowInfo()
         {
-            Type c = cl.GetType();
+            Type c = this.GetType();
             Console.WriteLine($"Информация об учениках класса:\0{c.Name}");
 
-            foreach (Pupil p in cl.PupilList)
+            foreach (Pupil p in this.PupilList)
             {
                 Type t = p.GetType();
                 Console.WriteLine($"\nУченик:\0{t.Name}");
