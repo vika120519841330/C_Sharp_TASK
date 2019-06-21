@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsOperator_v1", "NewsOperator\NewsOperator_v1.csproj", "{CED4CDFA-D2CB-48D7-BC07-3DEE1E637830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsOperaators_v2", "NewsOperaators_v2\NewsOperaators_v2.csproj", "{B16C7074-E769-43D3-B7AB-FF0539FD22E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CED4CDFA-D2CB-48D7-BC07-3DEE1E637830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED4CDFA-D2CB-48D7-BC07-3DEE1E637830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED4CDFA-D2CB-48D7-BC07-3DEE1E637830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED4CDFA-D2CB-48D7-BC07-3DEE1E637830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16C7074-E769-43D3-B7AB-FF0539FD22E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16C7074-E769-43D3-B7AB-FF0539FD22E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16C7074-E769-43D3-B7AB-FF0539FD22E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16C7074-E769-43D3-B7AB-FF0539FD22E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B3CE4C0-40B0-4F0D-BDDC-0A5EC6619DFA}
+	EndGlobalSection
+EndGlobal

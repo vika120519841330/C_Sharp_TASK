@@ -13,8 +13,8 @@ namespace Players
             Sony sony = new Sony(Power.StdVoltage.V380);
             sony.Voltage = Power.StdVoltage.V127;
             sony.ShowVoltage();
-
-            SamsungInheritor samsung = new SamsungInheritor(Power.StdVoltage.V110);
+            Samsung samsung = new Samsung(Power.StdVoltage.V110);
+            //SamsungInheritor samsung = new SamsungInheritor(Power.StdVoltage.V110);
             samsung.ShowVoltage();
 
             ArrayList playersList = new ArrayList();
@@ -34,7 +34,7 @@ namespace Players
                 iplRef.Pause();
                 iplRef.Start();
                 iplRef.Stop();
-                powRef = p;
+                powRef = (Power)p;
                 powRef.ShowVoltage();
                 Console.WriteLine();
             }
@@ -47,7 +47,7 @@ namespace Players
         void Stop();
     }
 
-    public abstract class Power
+    public class Power
     {
         public enum StdVoltage : int { V110 = 110, V127 = 127, V220 = 220, V380 = 380 };
 
@@ -101,7 +101,12 @@ namespace Players
                 }
             }
         }
-        public abstract void ShowVoltage();
+        //public abstract void ShowVoltage();
+        public virtual void ShowVoltage()
+        {
+            Console.WriteLine($"\nПлейер {this.GetType().Name} имеет следующий стандарт электропитания" +
+               $" (значение входного напряжения электрического тока)\0{this.Voltage}.\n");
+        }
     }
     public class Panasonic : Power, IPlayer
     {
@@ -199,7 +204,7 @@ namespace Players
             }
         }
     }
-    public abstract class Samsung : Power, IPlayer
+    public class Samsung : Power, IPlayer
     {
         public Samsung (StdVoltage v)
         {
@@ -242,7 +247,7 @@ namespace Players
             }
         }
     }
-    public class SamsungInheritor : Samsung
+    /*public class SamsungInheritor : Samsung
     {
         public SamsungInheritor (StdVoltage v) :base(v)
         {
@@ -254,5 +259,5 @@ namespace Players
             Console.WriteLine($"\nПлейер {this.GetType().Name} имеет следующий стандарт электропитания" +
                 $" (значение входного напряжения электрического тока)\0{this.Voltage}.\n");
         }
-    }
+    }*/
 }

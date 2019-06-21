@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\bin\Debug\netcoreapp2.1\NewsOperator.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\bin\Debug\netcoreapp2.1\NewsOperator.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\bin\Debug\netcoreapp2.1\NewsOperator.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\bin\Debug\netcoreapp2.1\NewsOperator.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\bin\Debug\netcoreapp2.1\NewsOperator.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\obj\Debug\netcoreapp2.1\NewsOperator.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\obj\Debug\netcoreapp2.1\NewsOperator.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\obj\Debug\netcoreapp2.1\NewsOperator.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\obj\Debug\netcoreapp2.1\NewsOperator.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\obj\Debug\netcoreapp2.1\NewsOperator.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_13\NewsOperator\NewsOperator\obj\Debug\netcoreapp2.1\NewsOperator.pdb
