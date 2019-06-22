@@ -143,7 +143,7 @@ namespace NewsOperator
         static void Main(string[] args)
         {
             Console.Title = MyClass.Title;
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Red;
             
             new MyClass();
 
