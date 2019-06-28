@@ -4,10 +4,10 @@
 представители Stream), инструменты соответствующих видов сериализации.*/
 
 using System;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 using System.IO;
 
-namespace Aircraft_Bynary
+namespace Aircraft_Xml
 {
     public class Program
     {
@@ -15,41 +15,44 @@ namespace Aircraft_Bynary
         {
 
             Aircraft aircraft1 = new Aircraft();
-
             aircraft1.ShowInfoAir();
 
-            // Сериализация созданного экземпляра обьекта Aircraft
-            Aircraft.Serialize(aircraft1);
-            // Десериализация экземпляра обьекта Aircraft
-            aircraft1 = Aircraft.DeSerialize();
+            // Сериализация созданного экземпляра обьекта Aircraft  №1
+            //Aircraft.Serialize(aircraft1);                             // СНЯТЬ КОММЕНТАРИЙ
+
+            // Десериализация экземпляра обьекта Aircraft №1    
+           //aircraft1 = Aircraft.DeSerialize();                        // СНЯТЬ КОММЕНТАРИЙ
+
 
             // Подписка на событие Takeoff
             aircraft1.Takeoff += new TakeoffEventHandler(aircraft1.TakeoffHandler);
+
             // Взлет - вызов события Takeoff
-            TakeoffEventArgs argTakeoff = new TakeoffEventArgs(250, 5, 600);
+            TakeoffEventArgs argTakeoff = new TakeoffEventArgs(300, 5, 600);
             aircraft1.OnTakeoff(argTakeoff);
+
             aircraft1.ShowInfoAir();
 
-            // ПОПЫТКА ВЫЗВАТЬ СЕРИАЛИЗАЦИЮ ПОСЛЕ ОБРАЩЕНИЯ К ДЕЛЕГАТУ СОБЫТИЯ ВЫЗЫВАЕТ ОШИБКУ :
-            // 'System.Runtime.Serialization.SerializationException: 'Serializing delegates is not supported on this platform.' 
-            //НЕ ПОНИМАЮ, ПОЧЕМУ, ВЕДЬ ПРИ ТАКОЙ ЖЕ ПРОЦЕДУРЕ СЕРИАЛИЗАЦИИ В XML-ФОРМАТЕ ПОДОБНОЕ НЕ ПРОИСХОДИТ???
+            // Сериализация измененного экземпляра обьекта Aircraft  №2
+            Aircraft.Serialize(aircraft1);                              // СНЯТЬ КОММЕНТАРИЙ
 
-            // Сериализация измененного экземпляра обьекта Aircraft
-            //Aircraft.Serialize(aircraft1);                            //ЗАКОММЕНТИРОВАННО ИЗ-ЗА EXCEPTION
-            // Десериализация измененного экземпляра обьекта Aircraft
-            //aircraft1 = Aircraft.DeSerialize();                       //ЗАКОММЕНТИРОВАННО ИЗ-ЗА EXCEPTION
+            // Десериализация экземпляра обьекта Aircraft №2
+            aircraft1 = Aircraft.DeSerialize();                         // СНЯТЬ КОММЕНТАРИЙ
 
             // Подписка на событие Boarding
             aircraft1.Boarding += new BoardingEventHandler(aircraft1.BoardingHandler);
+
             // Посадка - вызов события Boarding
             BoardingEventArgs argBoard = new BoardingEventArgs(120);
             aircraft1.OnBoarding(argBoard);
+
             aircraft1.ShowInfoAir();
 
-            // Сериализация измененного экземпляра обьекта Aircraft
-            //Aircraft.Serialize(aircraft1);                             //ЗАКОММЕНТИРОВАННО ИЗ-ЗА EXCEPTION
-            // Десериализация измененного экземпляра обьекта Aircraft
-            //aircraft1 = Aircraft.DeSerialize();                        //ЗАКОММЕНТИРОВАННО ИЗ-ЗА EXCEPTION
+            //Сериализация измененного экземпляра обьекта Aircraft  №3
+            //Aircraft.Serialize(aircraft1);                            // СНЯТЬ КОММЕНТАРИЙ
+
+            // Десериализация экземпляра обьекта Aircraft №3
+            //aircraft1 = Aircraft.DeSerialize();                       // СНЯТЬ КОММЕНТАРИЙ
         }
     }
 
@@ -150,9 +153,9 @@ namespace Aircraft_Bynary
         }
     }
 
-    [Serializable]
-    public class Aircraft 
-        //: IDeserializationCallback
+    [XmlRoot]
+    public class Aircraft
+    //: IDeserializationCallback
     {
         // Текущая скорость полета самолета, км/ч
         public int CurrentSpeed { get; set; }
@@ -192,7 +195,7 @@ namespace Aircraft_Bynary
             this.ChangeHight(arg.Height);
             this.ChangeCourse(arg.Course);
         }
-       
+
         // Событие ПОСАДКА
         public event BoardingEventHandler Boarding;
         // Метод, запускающий событие  ПОСАДКА
@@ -206,7 +209,7 @@ namespace Aircraft_Bynary
         {
             this.ChangeCourse(arg.Course);
             this.ChangeHight(arg.Height);
-            this.ChangeSpeed(arg.Speed); 
+            this.ChangeSpeed(arg.Speed);
         }
 
         public void ShowInfoAir()
@@ -275,7 +278,6 @@ namespace Aircraft_Bynary
                     CurrentCourse += 60;
                     Console.WriteLine($"Текущий курс полета самолета {this.CurrentCourse}\0градусов");
                 }
-              
             }
             else if (CurrentCourse > NeedCourse)
             {
@@ -289,7 +291,7 @@ namespace Aircraft_Bynary
             else if (CurrentCourse == NeedCourse)
             {
                 Console.WriteLine("Самолет уже находится на заданном курсе!");
-               
+
             }
             Console.WriteLine($"Направление самолета по заданному курсу {this.NeedCourse}\0градусов завершено!");
         }
@@ -442,13 +444,13 @@ namespace Aircraft_Bynary
             Directory.CreateDirectory(@"D:\SerealizeAirDir");
 
             //Создаем файл, в который будем сохранять выходные данные сериализации
-            FileStream fs = new FileStream(@"D:\SerealizeAirDir\SerializedAircraftBinary.txt", FileMode.Create);
+            FileStream fs = new FileStream(@"D:\SerealizeAirDir\SerializedAircraftXml.XML", FileMode.Create);
 
-            // Создаем обьект BinaryFormatter для выполнения сериализации
-            BinaryFormatter bf = new BinaryFormatter();
+            // Создаем обьект XmlSerializer для выполнения сериализации
+            XmlSerializer xs = new XmlSerializer(typeof(Aircraft));
 
             // Используем обьект bf для сериализации экземпляра обьекта air и отправки его в файл fs
-            bf.Serialize(fs, a);
+            xs.Serialize(fs, a);
 
             // Закрываем файл fs
             fs.Close();
@@ -458,13 +460,13 @@ namespace Aircraft_Bynary
         public static Aircraft DeSerialize()
         {
             // Создаем новый потоковый обьект для считывания результатов выполненной ранее сериализации из файла
-            FileStream fs = new FileStream(@"D:\SerealizeAirDir\SerializedAircraftBinary.txt", FileMode.Open);
+            FileStream fs = new FileStream(@"D:\SerealizeAirDir\SerializedAircraftXml.XML", FileMode.Open);
 
-            // Создаем обьект BinaryFormatter для выполнения десериализации
-            BinaryFormatter bf = new BinaryFormatter();
+            // Создаем обьект XmlSerializer для выполнения десериализации
+            XmlSerializer xs = new XmlSerializer(typeof(Aircraft));
 
             // Используем обьект bf для десериализации данных из файла fs в экземпляр обьекта air
-            Aircraft air = (Aircraft)bf.Deserialize(fs);
+            Aircraft air = (Aircraft)xs.Deserialize(fs);
 
             // Закрываем файл fs
             fs.Close();
