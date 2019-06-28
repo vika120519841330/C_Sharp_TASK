@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\bin\Debug\netcoreapp2.1\Aircraft_Serialization_binary.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\bin\Debug\netcoreapp2.1\Aircraft_Serialization_binary.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\bin\Debug\netcoreapp2.1\Aircraft_Serialization_binary.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\bin\Debug\netcoreapp2.1\Aircraft_Serialization_binary.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\bin\Debug\netcoreapp2.1\Aircraft_Serialization_binary.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\obj\Debug\netcoreapp2.1\Aircraft_Serialization_binary.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\obj\Debug\netcoreapp2.1\Aircraft_Serialization_binary.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\obj\Debug\netcoreapp2.1\Aircraft_Serialization_binary.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\obj\Debug\netcoreapp2.1\Aircraft_Serialization_binary.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\obj\Debug\netcoreapp2.1\Aircraft_Serialization_binary.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_15\Aircraft_Serialization\Aircraft_Serialization_v2\obj\Debug\netcoreapp2.1\Aircraft_Serialization_binary.pdb

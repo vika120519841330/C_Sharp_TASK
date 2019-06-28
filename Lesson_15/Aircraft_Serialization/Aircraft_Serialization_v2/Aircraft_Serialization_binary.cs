@@ -4,32 +4,45 @@
 представители Stream), инструменты соответствующих видов сериализации.*/
 
 using System;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
 namespace Aircraft
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
 
             Aircraft aircraft1 = new Aircraft();
 
             aircraft1.ShowInfoAir();
 
+            
+            // Сериализация созданного экземпляра обьекта Aircraft
+            Aircraft.Serialize(aircraft1);
+
+            // Десериализация экземпляра обьекта Aircraft
+            aircraft1 = Aircraft.DeSerialize();
+
+
             // Подписка на событие Takeoff
             aircraft1.Takeoff += new TakeoffEventHandler(aircraft1.TakeoffHandler);
+
             // Подписка на событие Boarding
             aircraft1.Boarding += new BoardingEventHandler(aircraft1.BoardingHandler);
-
-            TakeoffEventArgs argTakeoff = new TakeoffEventArgs(250, 5, 600);
+            
             // взлет - вызов события Takeoff
+            TakeoffEventArgs argTakeoff = new TakeoffEventArgs(250, 5, 600);
             aircraft1.OnTakeoff(argTakeoff);
             aircraft1.ShowInfoAir();
-
+                      
             // посадка - вызов события Boarding
             BoardingEventArgs argBoard = new BoardingEventArgs(120);
             aircraft1.OnBoarding(argBoard);
             aircraft1.ShowInfoAir();
-
+           
         }
     }
 
@@ -130,12 +143,14 @@ namespace Aircraft
         }
     }
 
-    public class Aircraft
+    [Serializable]
+    public class Aircraft 
+        //: IDeserializationCallback
     {
         // Текущая скорость полета самолета, км/ч
         public int CurrentSpeed { get; set; }
 
-       // Текущая высота полета самолета, км.
+        // Текущая высота полета самолета, км.
         public int CurrentHeight { get; set; }
 
         // Курс самолета, градусы
@@ -153,7 +168,6 @@ namespace Aircraft
             CurrentHeight = 0;
             CurrentSpeed = 0;
             CurrentCourse = 0;
-
         }
 
         // Событие ВЗЛЕТ
@@ -187,6 +201,7 @@ namespace Aircraft
             this.ChangeHight(arg.Height);
             this.ChangeSpeed(arg.Speed); 
         }
+
         public void ShowInfoAir()
         {
             Console.WriteLine($"\nСамолет:\0{this.ModelAir}" +
@@ -197,7 +212,7 @@ namespace Aircraft
 
         // Необходимая (заданная) скорость полета самолета
         private int needSpeed;
-        private int NeedSpeed
+        public int NeedSpeed
         {
             get
             {
@@ -211,7 +226,7 @@ namespace Aircraft
 
         // Необходимая (заданная) высота полета самолета
         private int needHeight;
-        private int NeedHeight
+        public int NeedHeight
         {
             get
             {
@@ -225,7 +240,7 @@ namespace Aircraft
 
         // Необходимый (заданный) курс полета самолета
         private int needCourse;
-        private int NeedCourse
+        public int NeedCourse
         {
             get
             {
@@ -236,10 +251,10 @@ namespace Aircraft
                 needCourse = value;
             }
         }
-        
+
 
         // Метод для изменения курса движения самолета 
-        private void ChangeCourse(int c)
+        public void ChangeCourse(int c)
         {
             NeedCourse = c;
             Console.WriteLine($"\nТребуемый курс полета самолета: {this.NeedCourse}\0градусов.");
@@ -248,13 +263,13 @@ namespace Aircraft
             if (CurrentCourse < NeedCourse)
             {
                 Console.WriteLine("Повернуть штурвал влево!");
-                CurrentCourse = CurrentCourse + 60;
+                CurrentCourse += 60;
                 Console.WriteLine($"Текущий курс полета самолета {this.CurrentCourse}\0градусов");
             }
             else if (CurrentCourse > NeedCourse)
             {
                 Console.WriteLine("Повернуть штурвал вправо!");
-                CurrentCourse = CurrentCourse - 60;
+                CurrentCourse -= 60;
                 Console.WriteLine($"Текущий курс полета самолета {this.CurrentCourse}\0градусов");
             }
             else if (CurrentCourse == NeedCourse)
@@ -266,14 +281,14 @@ namespace Aircraft
         }
 
         // Метод, для набора скорости
-        private void MoveUp(int s)
+        public void MoveUp(int s)
         {
             NeedSpeed = s;
             Console.WriteLine($"\nРазогнать самолета до скорости {this.NeedSpeed}\0км/ч:");
             do
             {
                 Console.WriteLine("Отвести рычаг управления двигателем от себя! Увеличить подачу топлива для ускорения двигателей!");
-                CurrentSpeed = CurrentSpeed + 100;
+                CurrentSpeed += 100;
                 Console.WriteLine($"Текущая скорость самолета {this.CurrentSpeed}\0км/ч.");
             }
             while (CurrentSpeed < NeedSpeed);
@@ -281,14 +296,14 @@ namespace Aircraft
         }
 
         //  Метод для сброса скорости
-        private void MoveDown(int s)
+        public void MoveDown(int s)
         {
             NeedSpeed = s;
             Console.WriteLine($"\nЗамедлить самолета до скорости {this.NeedSpeed}\0км/ч:");
             do
             {
                 Console.WriteLine("Потянуть рычаг управления двигателем на себя! Сократить подачу топлива для замедления двигателей");
-                CurrentSpeed = CurrentSpeed - 100;
+                CurrentSpeed -= 100;
                 Console.WriteLine($"Текущая скорость самолета {this.CurrentSpeed}\0км/ч.");
             }
             while (CurrentSpeed > NeedSpeed);
@@ -296,14 +311,14 @@ namespace Aircraft
         }
 
         // Метод для полной остановки 
-        private void MoveStop()
+        public void MoveStop()
         {
             NeedSpeed = 0;
             Console.WriteLine($"\nВыполнить полную остановку самолета:");
             do
             {
                 Console.WriteLine("Перевести рычаг управления двигателем в нейтральное положение! Выключить подачу топлива и двигатели! Надавить на педаль тормоза!");
-                CurrentSpeed = CurrentSpeed - 100;
+                CurrentSpeed -= 100;
                 Console.WriteLine($"Текущая скорость самолета {this.CurrentSpeed}\0км/ч.");
             }
             while ((CurrentSpeed != NeedSpeed) || (CurrentSpeed < NeedSpeed));
@@ -311,7 +326,7 @@ namespace Aircraft
         }
 
         // Метод для изменения (набора/снижения) текущей скорости - в качестве аргумента передается желаемая скорость полета
-        private void MovingForceUPDown(int s)
+        public void MovingForceUPDown(int s)
         {
             NeedSpeed = s;
             Console.WriteLine($"Текущая скорость самолета: {this.CurrentSpeed}\0км/ч.");
@@ -329,25 +344,25 @@ namespace Aircraft
         }
 
         // Набор высоты
-        private void HeightUp(int h)
+        public void HeightUp(int h)
         {
             this.NeedHeight = h;
             while (this.CurrentHeight != this.NeedHeight)
             {
                 Console.WriteLine("Потянуть штурвал на себя!");
-                this.CurrentHeight = this.CurrentHeight + 1;
+                this.CurrentHeight += 1;
                 Console.WriteLine($"Текущая высота полета самолета {this.CurrentHeight}\0км.");
             }
         }
 
         // Сброс высоты
-        private void HeightDown(int h)
+        public void HeightDown(int h)
         {
             this.NeedHeight = h;
             while ((this.CurrentHeight != this.NeedHeight) && (this.CurrentHeight >= 0))
             {
                 Console.WriteLine("Оттолкнуть штурвал от себя!");
-                this.CurrentHeight = this.CurrentHeight - 1;
+                this.CurrentHeight -= 1;
                 Console.WriteLine($"Текущая высота полета самолета {this.CurrentHeight}\0км.");
             }
         }
@@ -402,6 +417,44 @@ namespace Aircraft
                 Console.WriteLine("\nВыключить двигатели!");
                 this.MoveStop();
             }
+        }
+
+        // Метод для сериализации экземпляра обьекта самолета
+        public static void Serialize(Aircraft a)
+        {
+            //Создаем каталог для хранения данных сериализации
+            Directory.CreateDirectory(@"D:\SerealizeAirDir");
+
+            //Создаем файл, в который будем сохранять выходные данные сериализации
+            FileStream fs = new FileStream(@"D:\SerealizeAirDir\SerializedAircraft.txt", FileMode.Create);
+
+            // Создаем обьект BinaryFormatter для выполнения сериализации
+            BinaryFormatter bf = new BinaryFormatter();
+
+            // Используем обьект bf для сериализации экземпляра обьекта air и отправки его в файл fs
+            bf.Serialize(fs, a);
+
+            // Закрываем файл fs
+            fs.Close();
+        }
+
+        // Метод для десериализации экземпляра обьекта Aircraft
+        public static Aircraft DeSerialize()
+        {
+            // Создаем новый потоковый обьект для считывания результатов выполненной ранее сериализации из файла
+            FileStream fs = new FileStream(@"D:\SerealizeAirDir\SerializedAircraft.txt", FileMode.Open);
+
+            // Создаем обьект BinaryFormatter для выполнения десериализации
+            BinaryFormatter bf = new BinaryFormatter();
+
+            // Используем обьект bf для десериализации данных из файла fs в экземпляр обьекта air
+            Aircraft air = (Aircraft)bf.Deserialize(fs);
+
+            // Закрываем файл fs
+            fs.Close();
+
+            //Возвращаем десериализованный экземпляр обьекта Aircraft
+            return air;
         }
     }
 }
