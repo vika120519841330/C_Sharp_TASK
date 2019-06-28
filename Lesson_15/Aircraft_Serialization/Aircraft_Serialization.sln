@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aircraft_Serialization_v2", "Aircraft_Serialization_v2\Aircraft_Serialization_v2.csproj", "{6EC77F33-8E30-4C80-B17C-4E32F88F47E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EC77F33-8E30-4C80-B17C-4E32F88F47E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC77F33-8E30-4C80-B17C-4E32F88F47E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC77F33-8E30-4C80-B17C-4E32F88F47E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC77F33-8E30-4C80-B17C-4E32F88F47E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4309FACC-BDCC-4BF5-BF91-63DF3B6A894B}
+	EndGlobalSection
+EndGlobal

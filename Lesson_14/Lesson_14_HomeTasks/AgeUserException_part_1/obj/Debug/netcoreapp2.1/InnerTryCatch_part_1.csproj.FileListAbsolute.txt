@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\bin\Debug\netcoreapp2.1\InnerTryCatch_part_1.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\bin\Debug\netcoreapp2.1\InnerTryCatch_part_1.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\bin\Debug\netcoreapp2.1\InnerTryCatch_part_1.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\bin\Debug\netcoreapp2.1\InnerTryCatch_part_1.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\bin\Debug\netcoreapp2.1\InnerTryCatch_part_1.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\obj\Debug\netcoreapp2.1\InnerTryCatch_part_1.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\obj\Debug\netcoreapp2.1\InnerTryCatch_part_1.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\obj\Debug\netcoreapp2.1\InnerTryCatch_part_1.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\obj\Debug\netcoreapp2.1\InnerTryCatch_part_1.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\obj\Debug\netcoreapp2.1\InnerTryCatch_part_1.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\AgeUserException_part_1\obj\Debug\netcoreapp2.1\InnerTryCatch_part_1.pdb

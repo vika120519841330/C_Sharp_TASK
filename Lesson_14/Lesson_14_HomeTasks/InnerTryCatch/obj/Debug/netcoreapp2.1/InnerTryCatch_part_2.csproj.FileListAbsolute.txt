@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\bin\Debug\netcoreapp2.1\InnerTryCatch_part_2.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\bin\Debug\netcoreapp2.1\InnerTryCatch_part_2.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\bin\Debug\netcoreapp2.1\InnerTryCatch_part_2.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\bin\Debug\netcoreapp2.1\InnerTryCatch_part_2.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\bin\Debug\netcoreapp2.1\InnerTryCatch_part_2.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\obj\Debug\netcoreapp2.1\InnerTryCatch_part_2.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\obj\Debug\netcoreapp2.1\InnerTryCatch_part_2.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\obj\Debug\netcoreapp2.1\InnerTryCatch_part_2.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\obj\Debug\netcoreapp2.1\InnerTryCatch_part_2.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\obj\Debug\netcoreapp2.1\InnerTryCatch_part_2.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_14\Lesson_14_HomeTasks\InnerTryCatch\obj\Debug\netcoreapp2.1\InnerTryCatch_part_2.csprojAssemblyReference.cache
