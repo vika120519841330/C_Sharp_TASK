@@ -1,0 +1,11 @@
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\bin\Debug\netcoreapp2.1\MultiThreadInOut.deps.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\bin\Debug\netcoreapp2.1\MultiThreadInOut.runtimeconfig.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\bin\Debug\netcoreapp2.1\MultiThreadInOut.runtimeconfig.dev.json
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\bin\Debug\netcoreapp2.1\MultiThreadInOut.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\bin\Debug\netcoreapp2.1\MultiThreadInOut.pdb
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\obj\Debug\netcoreapp2.1\MultiThreadInOut.csprojAssemblyReference.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\obj\Debug\netcoreapp2.1\MultiThreadInOut.csproj.CoreCompileInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\obj\Debug\netcoreapp2.1\MultiThreadInOut.AssemblyInfoInputs.cache
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\obj\Debug\netcoreapp2.1\MultiThreadInOut.AssemblyInfo.cs
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\obj\Debug\netcoreapp2.1\MultiThreadInOut.dll
+D:\Program files\C_Sharp\C_Sharp\HomeWork\TASKs_main\C_Sharp_TASK\Lesson_16\MultiThreadInOut\MultiThreadInOut\obj\Debug\netcoreapp2.1\MultiThreadInOut.pdb
